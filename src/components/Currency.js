@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { AppContext } from '../context/AppContext';
 
 const Currency = () => {
-	const { dispatch, currency } = useContext(AppContext);
+	const { dispatch} = useContext(AppContext);
 	const chgCurrency = (val) => {
 		dispatch({
 			type: 'CHG_CURRENCY',
@@ -12,8 +12,12 @@ const Currency = () => {
 	};
 	return (
 		<span className="alert bg-success">
-			Currency:{currency}(
-			<select className="alert" onChange={(event) => chgCurrency(event.target.value)}>
+			Currency(
+			<select 
+				className="alert" 
+				onChange={(event) => chgCurrency(event.target.value)}
+				style={{backgroundColor:"#198754"}}
+				>
 				<option value="$" name="dollar">$ Dollar</option>
 				<option value="£" name="dollar">£ Pound</option>
 				<option value="€" name="dollar">€ Euro</option>
