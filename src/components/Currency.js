@@ -19,9 +19,9 @@ const Currency = () => {
 				style={{backgroundColor:"#198754"}}
 				>
 				<option value="$" name="dollar">$ Dollar</option>
-				<option value="£" name="dollar">£ Pound</option>
-				<option value="€" name="dollar">€ Euro</option>
-				<option value="₹" name="dollar">₹ Rupee</option>
+				<option value="£" name="pound" selected>£ Pound</option>
+				<option value="€" name="euro">€ Euro</option>
+				<option value="₹" name="rupee">₹ Rupee</option>
 			</select>)
 		</span>
 	);
